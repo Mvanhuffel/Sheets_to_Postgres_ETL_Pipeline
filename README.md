@@ -1,4 +1,4 @@
-# Sheets_to_Postgres_ETL_Pipeline
+# Google Sheets to PostgreSQL ETL Pipeline
 
 This project is a python-based ETL (Extract, Transform, Load) pipeline that automates the extraction of data from Google Sheets, transforms the data as needed, and loads it into a PostgreSQL database hosted on ElephantSQL. It's designed to streamline the process of data handling, making it easier to perform insightful data analysis in the cloud.
 
