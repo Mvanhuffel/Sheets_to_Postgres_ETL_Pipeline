@@ -7,14 +7,14 @@ from load import insert_data_to_db, init_db_engine
 def load_config(file_path):
     with open(file_path, 'r') as file:
         config = yaml.safe_load(file)
-    logging.info("Configuration file loaded successfully.")
     return config
 
 if __name__ == "__main__":
     print("ETL script started running.")
     config = load_config('config.yaml')
 
-    logging.basicConfig(filename=config['log_file_path'], level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+    # Setup logging configuration
+    logging.basicConfig(filename='data_ingestion.log', filemode='a', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
     try:
         service = init_google_sheets_api(config)
@@ -32,7 +32,8 @@ if __name__ == "__main__":
             logging.info("No data to load.")
 
     except Exception as e:
-        logging.error(f"Error in ETL process: {e}")
+        logging.error(f"Error in ETL process: {e}", exc_info=True)
 
     finally:
         logging.info("ETL process completed.")
+
