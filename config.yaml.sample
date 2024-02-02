@@ -1,0 +1,10 @@
+db_username: # Your ElephantSQL username
+db_password: # Your ElephantSQL password
+db_host: # Your ElephantSQL server
+db_port: # Default PostgreSQL port
+db_name: # Your ElephantSQL database name
+schema_name: # Your new schema name
+staging_table_name: # Your table name
+file_id: # ID in Google Sheets URL
+service_account_file: # path to the JSON file containing credentials for a Google Cloud service account
+date_column_name: 'day'
