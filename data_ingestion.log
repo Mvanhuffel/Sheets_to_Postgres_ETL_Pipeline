@@ -1,0 +1,7 @@
+2024-02-02 16:16:38,325 - INFO - ETL process completed.
+2024-02-02 16:19:06,562 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-02-02 16:19:06,583 - INFO - Successfully connected to Google Sheets Service.
+2024-02-02 16:19:08,361 - INFO - Successfully extracted data from Google Sheets.
+2024-02-02 16:19:08,688 - INFO - Successfully connected to the database.
+2024-02-02 16:19:15,022 - INFO - Data successfully loaded into ccp.l1_traffic table.
+2024-02-02 16:19:15,024 - INFO - ETL process completed.
