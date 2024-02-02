@@ -11,7 +11,7 @@ def load_config(file_path):
 
 if __name__ == "__main__":
     print("ETL script started running.")
-    config = load_config('config.yaml')
+    config = load_config('../config.yaml')
 
     # Setup logging configuration
     logging.basicConfig(filename='data_ingestion.log', filemode='a', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
