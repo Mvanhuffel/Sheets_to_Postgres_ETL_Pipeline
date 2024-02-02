@@ -36,11 +36,31 @@ pip install -r requirements.txt
 ```
 
 ## Usage
-To start the ETL process, run the main.py script from the command line:
+To start the ETL process, run the main.py script from the command line. Ensure you are in the project root directory:
 ```ruby
 python src/main.py
 ```
-*Ensure your config.yaml file is set up with the correct parameters before running the script.*
+*Ensure your config.yaml file is set up with the correct parameters before running the script. If you haven't already, copy `config.example.yaml` to `config.yaml` and edit it with your settings.*
+
+## Project Structure:
+
+```ruby
+Sheets to SQL/
+├── .git/                # Git version control system directory
+├── .gitignore           # Specifies intentionally untracked files to ignore
+├── _pycache_/           # Compiled Python files
+├── data/                # Data files, like your Google service account JSON
+├── env_sts/             # Virtual environment directory
+├── logs/                # Log files directory
+│   └── data_ingestion.log
+├── src/                 # Source code directory
+│   ├── extract.py       # Your extraction script
+│   ├── load.py          # Your loading script
+│   └── main.py          # Main script that orchestrates the ETL process
+├── README.md            # Project documentation
+├── requirements.txt     # Python package dependencies
+└── config.yaml          # Configuration file 
+```
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](https://www.mit.edu/~amini/LICENSE.md) file for details.
